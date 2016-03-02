@@ -16,5 +16,6 @@ ion-content {
 
 .versie{
     font-size: xx-small;
-    color: darkred;
+    color: black;
+    text-align: center;
 }
