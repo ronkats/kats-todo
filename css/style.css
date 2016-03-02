@@ -13,3 +13,8 @@ ion-content {
   left: 0;
   z-index:-9999;
 }
+
+.versie{
+    font-size: xx-small;
+    color: darkred;
+}
