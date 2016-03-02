@@ -3,7 +3,7 @@ var app = angular.module('kats-todo', ['ionic', 'LocalStorageModule']);
 
 app.config(function (localStorageServiceProvider) {
     localStorageServiceProvider
-        .setPrefix('scotch-todo');
+        .setPrefix('kats-todo');
 });
 
 app.controller('main', function ($scope, $ionicModal, localStorageService) { //store the entities name in a variable var taskData = 'task';
