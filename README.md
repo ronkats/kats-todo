@@ -6,3 +6,5 @@ https://scotch.io/tutorials/create-your-first-mobile-app-with-angularjs-and-ioni
 Language: Dutch
 
 Version 0.9
+
+MySQL tutorial used: http://www.sitepoint.com/using-node-mysql-javascript-client/
