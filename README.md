@@ -8,3 +8,8 @@ Language: Dutch
 Version 0.9
 
 MySQL tutorial used: http://www.sitepoint.com/using-node-mysql-javascript-client/
+
+
+TODO:
+- Store tasks in db (started at 3-3-2016)
+- Restructure src to enable build scripts like gulp (started at 3-4-2016)
