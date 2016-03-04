@@ -5,5 +5,12 @@
 }
 
 .background {
-    background: chocolate;
+    background: rgba(206,172,166,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(206,172,166,1) 0%, rgba(173,57,37,1) 75%, rgba(173,57,37,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(206,172,166,1)), color-stop(75%, rgba(173,57,37,1)), color-stop(100%, rgba(173,57,37,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(206,172,166,1) 0%, rgba(173,57,37,1) 75%, rgba(173,57,37,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(206,172,166,1) 0%, rgba(173,57,37,1) 75%, rgba(173,57,37,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(206,172,166,1) 0%, rgba(173,57,37,1) 75%, rgba(173,57,37,1) 100%);
+background: radial-gradient(ellipse at center, rgba(206,172,166,1) 0%, rgba(173,57,37,1) 75%, rgba(173,57,37,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ceaca6', endColorstr='#ad3925', GradientType=1 );
 }
