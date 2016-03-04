@@ -11,6 +11,7 @@ Run "npm install" and after that "gulp" to create the app
 
 TODO:
 - Store tasks in db (started at 3-3-2016)
+- Create loginforn
 
 DONE:
 - Restructure src to enable build scripts like gulp (started at 3-4-2016 - done at 4-4-2016)
