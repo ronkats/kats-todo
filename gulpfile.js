@@ -52,7 +52,7 @@ gulp.task('copy', ['clean'], function () {
     }).pipe(gulp.dest('dist/lib'));
 });
 
-gulp.task('default', ['clean'], function () {
+gulp.task('default', ['copy'], function () {
     gulp.start('styles', 'scripts', 'images');
 });
 
