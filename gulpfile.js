@@ -21,11 +21,11 @@ gulp.task('styles', function () {
         .pipe(notify({ message: 'Styles task complete' }));
 });
 
+// .pipe(concat('app.js'))
 gulp.task('scripts', function () {
     return gulp.src('js/**/*.js')
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('default'))
-        .pipe(concat('app.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
