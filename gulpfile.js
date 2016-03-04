@@ -47,7 +47,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('copy', function () {
-    return gulp.src(['lib/**/*','index.html','readme.md'], {
+    return gulp.src(['fonts/**/*', 'lib/**/*','index.html','readme.md'], {
         base: 'lib'
     }).pipe(gulp.dest('dist/lib'));
 });
