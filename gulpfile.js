@@ -43,7 +43,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('clean', function () {
-    return del(['dist/css', 'dist/js', 'dist/img']);
+    return del(['dist/css', 'dist/js', 'dist/img', 'dist/lib', 'index.html', 'readme.md']);
 });
 
 gulp.task('copy', function () {
