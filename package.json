@@ -1,0 +1,46 @@
+{
+  "name": "kats-todo",
+  "version": "1.0.0",
+  "description": "Personal ToDo webapp",
+  "main": "index.html",
+  "dependencies": {
+    "bignumber.js": "^2.2.0",
+    "core-util-is": "^1.0.2",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "inherits": "^2.0.1",
+    "isarray": "^1.0.0",
+    "mysql": "^2.10.2",
+    "readable-stream": "^2.0.5",
+    "string_decoder": "^0.10.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronkats/kats-todo.git"
+  },
+  "keywords": [
+    "todo",
+    "mysql",
+    "ionic",
+    "angular"
+  ],
+  "author": "Ron Kats",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronkats/kats-todo/issues"
+  },
+  "homepage": "https://github.com/ronkats/kats-todo#readme"
+}

@@ -19,7 +19,7 @@ con.connect(function(err){
 
 //records count
 con.query('SELECT * FROM todo_table',function(err,rows){
-  if(err) throw err;
+    if (err) { throw err; }
 
   console.log('Data received from Db:\n');
   console.log(rows);
@@ -27,7 +27,7 @@ con.query('SELECT * FROM todo_table',function(err,rows){
 
 var store_taak = { ID: 1, Aangemaakt: '3-3-2016 22:34', Afgerond:0, Titel:'De titel', Content:'inhoud van de taak', Gebruiker:'gebruiker1' };
 con.query('INSERT INTO todo_table SET ?', store_taak, function(err,res){
-  if(err) throw err;
+    if (err) { throw err; }
 
   console.log('Last insert ID:', res.insertId);
 });
