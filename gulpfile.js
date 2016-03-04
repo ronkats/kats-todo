@@ -21,14 +21,14 @@ gulp.task('styles', function () {
         .pipe(notify({ message: 'Styles task complete' }));
 });
 
-// .pipe(concat('app.js'))
+/* .pipe(concat('app.js'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js')) */
 gulp.task('scripts', function () {
     return gulp.src('js/**/*.js')
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('default'))
-        .pipe(gulp.dest('dist/js'))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         .pipe(notify({ message: 'Scripts task complete' }));
 });
@@ -58,12 +58,14 @@ gulp.task('default', ['clean'], function () {
 
 gulp.task('watch', function () {
     // Watch .scss files
-    gulp.watch('css/**/*.css', ['styles']);
+    gulp.watch('/css/**/*.css', ['styles']);
     // Watch .js files
-    gulp.watch('js/**/*.js', ['scripts']);
+    gulp.watch('/js/**/*.js', ['scripts']);
     // Watch image files
     gulp.watch('/img/**/*', ['images']);
     // Watch index and readme.md
-    gulp.watch('index.html', ['copy']);
-    gulp.watch('readme.md', ['copy']);
+    gulp.watch('/index.html', ['copy']);
+    gulp.watch('/readme.md', ['copy']);
+    // Watch gulp file
+    gulp.watch('/gulpfile.js', ['default']);
 });

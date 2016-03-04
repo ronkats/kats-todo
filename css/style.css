@@ -4,6 +4,6 @@
     text-align: center;
 }
 
-ion-pane {
-    background: rgba(255, 100, 255, .5)
+.background {
+    background: chocolate;
 }
