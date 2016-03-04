@@ -46,14 +46,14 @@ gulp.task('clean', function () {
     return del(['dist/css', 'dist/js', 'dist/img']);
 });
 
-gulp.task('copy', ['clean'], function () {
+gulp.task('copy', function () {
     return gulp.src(['lib/**/*','index.html','readme.md'], {
         base: 'lib'
     }).pipe(gulp.dest('dist/lib'));
 });
 
-gulp.task('default', ['copy'], function () {
-    gulp.start('styles', 'scripts', 'images');
+gulp.task('default', ['clean'], function () {
+    gulp.start('copy', 'styles', 'scripts', 'images');
 });
 
 gulp.task('watch', function () {
@@ -63,4 +63,7 @@ gulp.task('watch', function () {
     gulp.watch('js/**/*.js', ['scripts']);
     // Watch image files
     gulp.watch('/img/**/*', ['images']);
+    // Watch index and readme.md
+    gulp.watch('index.html', ['copy']);
+    gulp.watch('readme.md', ['copy']);
 });
